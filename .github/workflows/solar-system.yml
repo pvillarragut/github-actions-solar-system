@@ -55,6 +55,9 @@ jobs:
     needs:
      - unit-testing
      - code-coverage
+    permissions:
+      contents: read
+      packages: write
     steps:
     - uses: actions/checkout@v4
     - name: Log in to GHCR
